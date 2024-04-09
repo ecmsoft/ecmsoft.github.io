@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario hoja de ruta</title>
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link href="img/ecmsoft-favicon.ico" rel="icon">
+    
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <form name="hojaruta" method="post" action="pdf.php">
+        
+        <div class="tittle">
+            <img src="img/ecmsoft-svg.svg" alt="">
+            <h1>Formulario de detalle preuniversitario</h1>
+        </div>
+        <div class="body">
+            <ul>
+                <li>
+                    <p>Sede</p>
+                    <select name="sede" id="sede">
+                        <option selected="selected" value="C. ORIENTE">C. ORIENTE</option>
+                        <option value="S. JOAQUÍN">S. JOAQUÍN</option>
+                        <option value="C. CENTRAL">C. CENTRAL</option>
+                        <option value="PIRQUE">PIRQUE</option>
+                        <option value="CONCEPCIÓN">CONCEPCIÓN</option>
+                        <option value="VILLARICA">VILLARICA</option>
+                        <option value="S. MARY COLLEGE">S. MARY COLLEGE</option>
+                        <option value="IRMA SALAS SILVA">IRMA SALAS SILVA</option>
+                        <option value="L. DA VINCI">L. DA VINCI</option>
+                        <option value="SAN JORGE">SAN JORGE</option>
+                        <option value="GRAHAM BELL">GRAHAM BELL</option>
+                        <option value="ALBORADA">ALBORADA</option>
+                        <option value="S. EMPRENDEDORES">S. EMPRENDEDORES</option>
+                        <option value="M. ANA EUGENIA">M. ANA EUGENIA</option>
+                        <option value="PUENTE MAIPO">PUENTE MAIPO</option>
+                        <option value="APRENDER TP">APRENDER TP</option>
+                        <option value="L. P. CAÑETE">L. P. CAÑETE</option>
+                        <option value="M. RAFAEL PRADO">M. RAFAEL PRADO</option>
+                        <option value="J. DOMINGO CAÑAS">J. DOMINGO CAÑAS</option>
+                        <option value="S. FRANCISCO">S. FRANCISCO</option>
+                        <option value="M. LUIS A. P.">M. LUIS A. P.</option>
+                        <option value="S. ALBERTO HURTADO">S. ALBERTO HURTADO</option>
+                        <option value="C. SOL CHILE">C. SOL CHILE</option>
+                    </select>
+                </li>
+                <li>
+                    <p>Tipo</p>
+                    <select name="tipo" id="tipo">
+                        <option selected="selected" value="ENSAYO">ENSAYO</option>
+                        <option value="PRUEBA">PRUEBA</option>
+                        <option value="ENCUESTA">ENCUESTA</option>
+                        <option value="DIAGNOSTICO">DIAGNOSTICO</option>
+                        <option value="TEST VOCACIONAL">TEST VOCACIONAL</option>
+                    </select>
+                </li>
+                <li>
+                    <p>Número</p>
+                    <select name="numero" id="numero">
+                        <option selected="selected" value="N/Aplica">N/Aplica</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </li>
+                <li>
+                    <p>Nivel</p>
+                    <select name="nivel" id="nivel">
+                        <option selected="selected" value="I MEDIO">I MEDIO</option>
+                        <option value="II MEDIO">II MEDIO</option>
+                        <option value="III MEDIO">III MEDIO</option>
+                        <option value="IV MEDIO">IV MEDIO</option>
+                        <option value="TP">TP</option>
+                    </select>
+                </li>
+                <li>
+                    <p>Asignatura</p>
+                    <select name="asignatura" id="asignatura">
+                        <option selected="selected" value="LG">LG</option>
+                        <option value="MT">MT</option>
+                        <option value="HC">HC</option>
+                        <option value="CIBE">CIBE</option>
+                        <option value="CIFE">CIFE</option>
+                        <option value="CIQE">CIQE</option>
+                        <option value="CIC">CIC</option>
+                        <option value="MTE">MTE</option>
+                    </select>
+                </li>
+                <li>
+                    <p>Cantidad de pruebas</p>
+                    <input name="cantidad" id="cantidad" type="number" max="9999" required>
+                </li>
+                <button type="submit">Crear PDF</button>
+            </ul>
+        </div>
+    </form>
+</body>
+</html>
